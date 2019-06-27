@@ -1,0 +1,32 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %title MiniApp
+    = csrf_meta_tags
+    = csp_meta_tag
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+  %body
+    %header
+      .header-wrapper
+        = link_to articles_path, class: "header-wrapper__logo" do
+          Minimum Blog
+        - if user_signed_in?
+          %ul.header-wrapper__right
+            %li
+              = link_to new_article_path, class: "header-wrapper__right__content" do
+                NewPost
+            %li
+              = link_to destroy_user_session_path, class: "header-wrapper__right__content" do
+                SignOut
+        - else
+          %ul.header-wrapper__right
+            %li
+              = link_to new_user_session_path, class: "header-wrapper__right__content" do
+                SignIn 
+            %li
+              = link_to new_user_registration_path, class: "header-wrapper__right__content" do
+                SignUp
+
+    = yield

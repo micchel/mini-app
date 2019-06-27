@@ -1,0 +1,12 @@
+.container
+  .detail
+    .detail__title
+      = @article.title
+    .detail__text
+      = @article.body
+    - if user_signed_in?
+      .user-menu
+        =link_to edit_article_path, class: "user-menu__btn" do
+          Edit
+        =link_to "/articles/#{@article.id}", class: "user-menu__btn", method: "delete" do
+          Delete

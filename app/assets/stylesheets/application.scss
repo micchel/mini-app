@@ -13,3 +13,21 @@
  *= require_tree .
  *= require_self
  */
+@import "reset";
+@import "header";
+@import "index";
+@import "new-article";
+@import "show";
+@import "edit";
+@import url('https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c');
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: image-url("beach.jpg");
+  background-size: cover;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+}
