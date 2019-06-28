@@ -1,4 +1,4 @@
-.container {
+.index-container {
   height: 100vh;
   width: 100vw;
   padding-top: 60px;
@@ -28,6 +28,7 @@
         font-weight: bold;
         line-height: 50px;
         border-bottom: 1px solid gray;
+        overflow: hidden;
       }
       &__text {
         height: 100%;

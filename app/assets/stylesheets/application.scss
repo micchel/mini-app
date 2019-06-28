@@ -13,12 +13,14 @@
  *= require_tree .
  *= require_self
  */
+
 @import "reset";
 @import "header";
 @import "index";
 @import "new-article";
 @import "show";
 @import "edit";
+@import "user";
 @import url('https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c');
 
 
