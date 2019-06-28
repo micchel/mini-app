@@ -1,0 +1,56 @@
+.blue-container {
+  padding-top: 60px;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0,255,255,0.2);
+  overflow: scroll;
+  .detail {
+    min-height: 300px;
+    width: 70%;
+    margin: 5% auto;
+    border: groove 1px aqua;
+    color: saddlebrown;
+    background-color: aliceblue;
+    padding: 10px;
+    border-radius: 5px;
+    position: relative;
+    &__title {
+      min-height: 60px;
+      width: 100%;
+      font-size: 40px;
+      font-weight: bold;
+      line-height: 60px;
+      border-bottom: 1px solid gray;
+    }
+    &__text {
+      min-height: 100px;
+      width: 100%;
+      font-size: 20px;
+      line-height: 30px;
+      padding-top: 10px;
+      padding-left: 20px;
+      padding-bottom: 80px;
+      white-space: pre-wrap;
+    }
+    .user-menu {
+      height: 80px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      bottom: 0;
+      margin: 0 auto;
+      &__btn {
+        height: 50px;
+        width: 100px;
+        background-color: saddlebrown;
+        border-radius: 10px;
+        color: aliceblue;
+        text-align: center;
+        line-height: 50px;
+        margin: 10px;
+      }
+    }
+  }
+}

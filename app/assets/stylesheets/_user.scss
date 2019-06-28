@@ -1,0 +1,39 @@
+.user-contents {
+  padding-top: 60px;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0,255,255,0.2);
+  .new_user {
+    margin: 5vh auto;
+    height: 350px;
+    width: 350px;
+    padding: 20px 50px;
+    background-color: rgb(152, 243, 213);
+    border-radius: 5px;
+    h2 {
+      color: saddlebrown;
+      text-align: center;
+      padding-bottom: 10px;
+      margin: 0;
+    }
+    .field {
+      font-size: 18px;
+      color: saddlebrown;
+      font-weight: bold;
+      padding: 3px;
+      label {
+        padding-bottom: 5px;
+      }
+      input {
+        border: solid 1px cyan;
+      }
+    }
+    .actions {
+      padding: 20px 0;
+    }
+    a {
+      // text-decoration: none;
+      color: orange
+    }
+  }
+}
