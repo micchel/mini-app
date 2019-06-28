@@ -1,0 +1,12 @@
+.container
+  .edit-form
+    %h3 Edit Post
+    = form_for @article, method: :patch do |f|
+      .field
+        = f.label :title, "Title"
+        = f.text_field :title
+      .field
+        = f.label :text, "Text"
+        = f.text_area :body
+      .action
+        = f.submit "Update"
