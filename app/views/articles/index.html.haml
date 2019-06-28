@@ -1,0 +1,8 @@
+.index-container
+  - @articles.each do |article|
+    = link_to "/articles/#{article.id}" do
+      .card
+        .card__title
+          = article.title
+        .card__text
+          = article.body

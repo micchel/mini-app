@@ -1,0 +1,42 @@
+.index-container {
+  height: 100vh;
+  width: 100vw;
+  padding-top: 60px;
+  overflow: scroll;
+  a {
+    text-decoration: none;
+    .card {
+      height: 160px;
+      width: 50%;
+      color: saddlebrown;
+      padding: 10px;
+      margin: 15px auto;
+      background-color: rgba(240,248,255,0.7);
+      border: solid 1px #f0f8ff;
+      border-radius: 4px;
+      overflow: hidden;
+      // white-space: pre-wrap;
+      word-wrap: break-word;
+      &:hover {
+        background-color: rgba(240,248,255,0.9);
+      }
+      &__title {
+        display: inline-block;
+        height: 50px;
+        width: 100%;
+        font-size: 25px;
+        font-weight: bold;
+        line-height: 50px;
+        border-bottom: 1px solid gray;
+        overflow: hidden;
+      }
+      &__text {
+        height: 100%;
+        width: 100%;
+        font-size: 16px;
+        line-height: 30px;
+      }
+    }
+  }
+}
+  
